@@ -1,8 +1,12 @@
 
 /* ----------------------------------------- [ VARIABLES ] ------------------------------------------ */
 :root { 
-    --bg-color: ; 
-    --primary-color: ;
-    --secondary-color: ; 
+    --bg-color: white; 
+    --primary-color: #549c84;
+    --secondary-color: #fdcb46;
+    --bg-menu1: #fbdcdb;
+    --bg-menu2: #fff5fe;
+    --bg-menu3: #f9f9f9;
+    --bg-menu4: #fdfffd;
 }
 /* ----------------------------------------- [ STYLES GENERAUX ] ------------------------------------------ */
