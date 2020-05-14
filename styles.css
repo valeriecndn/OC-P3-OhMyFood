@@ -1,33 +1,75 @@
+/* ----------------------------------------- [ GENERAL ] ------------------------------------------ */
+
+* {  margin: 0rem; }
 
 /* ----------------------------------------- [ VARIABLES ] ------------------------------------------ */
 :root { 
-    --bg-color: white; 
-    --primary-color: #549c84;
-    --secondary-color: #fdcb46;
-    --bg-menu1: #fbdcdb;
-    --bg-menu2: #fff5fe;
-    --bg-menu3: #f9f9f9;
-    --bg-menu4: #fdfffd;
+    --bg-page: white; 
+    --bg-ohmy: #549c84;
+    --bg-note: #fbdcdb;
+    --bg-chic: #fff5fe;
+    --bg-delice: #f9f9f9;
+    --bg-palette: #fdfffd;
+    --color-ohmy: #fdcb46;
 }
-/* ----------------------------------------- [ STYLES GENERAUX ] ------------------------------------------ */
+/* ----------------------------------------- [ COULEURS ] ------------------------------------------ */
 
-h1 {
-    font-family: 'Sarabun', sans-serif;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+/* Backgrounds */
+body { background-color: var( --bg-page); }
+h1, footer, button { background-color: var( --bg-ohmy); }
+.menu-note { background-color: var( --bg-note); }
+.menu-chic { background-color: var( --bg-chic); }
+.menu-delice { background-color: var( --bg-delice); }
+.menu-palette { background-color: var( --bg-palette); }
+
+/* Text colors */
+ h1, footer, button { color: var( --color-ohmy); }
+
+/* ----------------------------------------- [ TYPOGRAPHIES ] ------------------------------------------ */
+
+.style-ohmy, .ft-ohmy { font-family: 'Montserrat', sans-serif; }
+.menu-note { font-family: 'Devonshire', cursive; }
+.menu-chic { font-family: 'Croissant One', cursive; }
+.menu-delice { font-family: 'Dancing Script', cursive; }
+.menu-palette { font-family: 'Kaushan Script', cursive;  }
+
+/* ----------------------------------------- [ MARGIN - FLEXBOX ] ------------------------------------------ */
+
+header h1 {
+    width: auto;
+    text-align: center;
+    padding: 2rem;
+    margin: 0rem;
+
 }
 
-h3 {
-    font-family: 'Devonshire', cursive;
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    font-size: 0.7rem;
+    margin: 0rem;
 }
 
+.page1 main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+.page1 section {
+    width: 18rem;
+    height: 25rem;
+    margin: 4rem 2rem 1rem 2rem;
+    text-align: center;
+}
 
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
 
-
-
-
-
+}
 
 
 /* ---------------------------------------------------------------------------------------------------
