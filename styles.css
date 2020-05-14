@@ -1,6 +1,7 @@
 /* ----------------------------------------- [ GENERAL ] ------------------------------------------ */
 
 * {  margin: 0rem; }
+body { margin-bottom: 6rem;}
 
 /* ----------------------------------------- [ VARIABLES ] ------------------------------------------ */
 :root { 
@@ -16,7 +17,7 @@
 
 /* Backgrounds */
 body { background-color: var( --bg-page); }
-h1, footer, button { background-color: var( --bg-ohmy); }
+header, footer, button { background-color: var( --bg-ohmy); }
 .menu-note { background-color: var( --bg-note); }
 .menu-chic { background-color: var( --bg-chic); }
 .menu-delice { background-color: var( --bg-delice); }
@@ -38,40 +39,63 @@ h1, footer, button { background-color: var( --bg-ohmy); }
 header h1 {
     width: auto;
     text-align: center;
-    padding: 2rem;
-    margin: 0rem;
-
+    padding: 1.7rem;
 }
 
 footer {
     display: flex;
     justify-content: space-between;
-    padding: 0.8rem;
+    width: 98%;
+    padding: 1rem;
     font-size: 0.7rem;
-    margin: 0rem;
+    position: fixed;
+    bottom: 0%;
 }
+      
+/* Index Accueil */
 
 .page1 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 2.5rem;
 }
 
 .page1 section {
     width: 18rem;
     height: 25rem;
-    margin: 4rem 2rem 1rem 2rem;
+    margin: 1rem;
     text-align: center;
+    box-shadow: 1px 1px 8px rgb(179, 178, 178);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu p {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.menu-chic {
+    font-size: 0.8rem;
 }
 
 .btn {
     display: flex;
     justify-content: center;
-    margin: 2rem;
-
+    margin: 2.5rem;
 }
 
-
+button {
+    padding: 0.5rem 2rem;
+    border: 1px var(--bg-ohmy) solid ;
+    border-radius: 10px;
+}
+    
 /* ---------------------------------------------------------------------------------------------------
 MEMO FONTS 
 
