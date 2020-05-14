@@ -10,3 +10,32 @@
     --bg-menu4: #fdfffd;
 }
 /* ----------------------------------------- [ STYLES GENERAUX ] ------------------------------------------ */
+
+h1 {
+    font-family: 'Sarabun', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+h3 {
+    font-family: 'Devonshire', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------
+MEMO FONTS 
+
+- OH MY FOOD : font-family: 'Montserrat', sans-serif;
+- LA NOTE ENCHANTEE : font-family: 'Devonshire', cursive; 
+- LE CHIC A LA FRANCAISE : font-family: 'Croissant One', cursive; 
+- LE DELICE DES PAPILLES : font-family: 'Dancing Script', cursive; 
+- LA PALETTE DU GOUT : font-family: 'Kaushan Script', cursive; 
+--------------------------------------------------------------------------------------------------- */ 
