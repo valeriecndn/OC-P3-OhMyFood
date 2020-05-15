@@ -3,7 +3,7 @@
 :root { 
     --bg-page: white; 
     --bg-ohmy: #549c84;
-    --bg-note: #fbdcdb;
+    --bg-note: #fae0df;
     --bg-chic: #fff5fe;
     --bg-delice: #f9f9f9;
     --bg-palette: #fdfffd;
@@ -39,6 +39,7 @@ header, footer, button { background-color: var( --bg-ohmy); }
 
 * {  margin: 0rem; }
 body { margin-bottom: 7rem; }
+a { text-decoration: none; color: unset; }
 
 /* ----- Header + Footer */
 
@@ -60,17 +61,17 @@ footer {
     bottom: 0%;
     font-size: 1.2rem;
 }
-      
+
 /* ----- Page index : Accueil */
 
-.page1 main {
+.index main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 2.5rem;
 }
 
-.page1 section {
+.index section {
     width: 15rem;
     height: 20rem;
     margin: 1rem;
@@ -87,6 +88,11 @@ footer {
 .menu p {
     font-size: 2rem;
     padding: 1rem;
+}
+
+.index img {
+    width: 2.3rem;
+    text-align: center;
 }
 
 .menu-chic {
