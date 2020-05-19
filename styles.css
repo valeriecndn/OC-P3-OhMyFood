@@ -1,7 +1,7 @@
 
 /* ----------------------------------------- [ VARIABLES ] ------------------------------------------- */
 :root { 
-    --bg-page: white; 
+    --bg-pages: white; 
     --bg-ohmy: #549c84;
     --bg-note: #fae0df;
     --bg-chic: #fff5fe;
@@ -9,26 +9,32 @@
     --bg-palette: #fdfffd;
     --color-ohmy: #fdcb46;
 }
-/* ----------------------------------------- [ COULEURS ] -------------------------------------------- */
+/* ----------------------------------------- [ COULEURS & FONTS ] -------------------------------------------- */
 
-/* Backgrounds */
-body { background-color: var( --bg-page); }
-header, footer, button { background-color: var( --bg-ohmy); }
-.menu-note { background-color: var( --bg-note); }
-.menu-chic { background-color: var( --bg-chic); }
-.menu-delice { background-color: var( --bg-delice); }
-.menu-palette { background-color: var( --bg-palette); }
+body { background-color: var( --bg-pages); }
 
-/* Text colors */
- h1, footer, button { color: var( --color-ohmy); }
+header, footer, button { 
+    background-color: var( --bg-ohmy);
+    color: var( --color-ohmy); 
+    font-family: 'Montserrat', sans-serif;
+    }
 
-/* ----------------------------------------- [ TYPOGRAPHIES ] ---------------------------------------- */
-
-.style-ohmy, .ft-ohmy { font-family: 'Montserrat', sans-serif; }
-.menu-note { font-family: 'Devonshire', cursive; }
-.menu-chic { font-family: 'Croissant One', cursive; }
-.menu-delice { font-family: 'Dancing Script', cursive; }
-.menu-palette { font-family: 'Kaushan Script', cursive;  }
+.menu-note--colorfont { 
+    background-color: var( --bg-note); 
+    font-family: 'Devonshire', cursive;
+}
+.menu-chic--colorfont { 
+    background-color: var( --bg-chic);
+    font-family: 'Croissant One', cursive;
+}
+.menu-delice--colorfont { 
+    background-color: var( --bg-delice); 
+    font-family: 'Dancing Script', cursive;
+}
+.menu-palette--colorfont { 
+    background-color: var( --bg-palette); 
+    font-family: 'Kaushan Script', cursive;
+}
 
 /* -----------------------------------------------------------------------------------------------------
 ------------------------------------------------- [ CSS ] ----------------------------------------------
@@ -36,8 +42,11 @@ header, footer, button { background-color: var( --bg-ohmy); }
 
 /* ----- Général  */
 
-* {  margin: 0rem; }
-body { margin-bottom: 7rem; }
+* { /* par défault */
+    margin: 0rem; 
+    font-size: 20px; 
+} 
+
 a { text-decoration: none; color: unset; }
 
 /* ----- Header + Footer */
@@ -47,73 +56,61 @@ header h1 {
     text-align: center;
     padding: 1.7rem;
     font-weight: bold;
-    font-size: 2.3rem;
 }
 
 footer {
     display: flex;
     justify-content: space-between;
-    width: 98%;
+    width: 100%;
     padding: 1rem;
-    font-size: 0.7rem;
     position: fixed;
     bottom: 0%;
-    font-size: 1.2rem;
 }
 
 /* ----- Page index : Accueil */
 
-.index main {
+.index_main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 2.5rem;
 }
 
-.index section {
+.index_main section {
     width: 15rem;
     height: 20rem;
     margin: 1rem;
-    text-align: center;
     box-shadow: 1px 1px 8px rgb(179, 178, 178);
-}
-
-.menu {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
-.menu p {
-    font-size: 2rem;
+.index_main h2, p {
     padding: 1rem;
 }
 
-.index img {
+.index_main img {
     width: 2.3rem;
     text-align: center;
-}
-
-.menu-chic {
-    font-size: 0.7rem;
 }
 
 .btn {
     display: flex;
     justify-content: center;
-    margin: 2.5rem;
+    margin: 3rem;
 }
 
 button {
     padding: 0.5rem 2rem;
     border: 1px var(--bg-ohmy) solid ;
     border-radius: 10px;
-    font-size: 1.2rem;
 }
     
 /* ----- Pages Menus */
 
-.menu-note, .menu-chic, .menu-delice, .menu-palette {
+.page2_main, .page3_main, .page4_main, .page5_main { 
     width: 35rem;
     height: auto;
     padding: 2rem;
@@ -122,27 +119,5 @@ button {
 }
 
 /* ----- Page 2 : La note enchantée */
-
-.page2 h3 {
-    text-align: center;
-    margin: 3rem;
-    font-size: 22px;
-}
-
-.page2 img {
-    width: 3rem;
-}
-
-.page2 h4, h5, p, aside { padding: 0.8rem; }
-.page2 h4, h5, aside { text-align: center; }
-
-.page2 h4 { font-size: 26px; }
-.page2 h5 { font-size: 22px; }
-.page2 p { font-size: 18px; }
-.page2 aside p { font-size: 24px; }
-
-
-
-
 
 
