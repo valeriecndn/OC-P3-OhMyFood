@@ -45,6 +45,12 @@ header, footer, button {
 .menu-chic--colorfont {
     font-family: 'Noto Serif', serif;
 }
+.note-soustitre {
+    font-family: 'Montserrat', sans-serif;
+}
+.page2_main article {
+    font-family: 'Kalam', cursive;
+}
 /* -----------------------------------------------------------------------------------------------------
 ------------------------------------------------- [ CSS ] ----------------------------------------------
  ----------------------------------------------------------------------------------------------------- */
@@ -136,10 +142,66 @@ button {
     width: 35rem;
     height: auto;
     padding: 2rem;
-    margin: 1rem;
     box-shadow: 1px 1px 8px rgb(179, 178, 178);
+}
+
+.partie-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0rem 0.8rem 0rem;
+
+}
+
+.partie-menu img {
+    height: 1.5rem;  
 }
 
 /* ----- Page 2 : La note enchantée */
 
+.note-soustitre {
+    text-align: center;
+    font-size: 28px;
+    padding: 3rem 0rem 1.5rem 0rem;
+}
 
+.carte-detail-note {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+.page2_main .logo, h4, h5, aside {
+    text-align: center;
+}
+
+.page2_main h4 {
+    font-size: 48px;
+    margin-bottom: 1.5rem;
+}
+
+.page2_main article {
+    padding: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.page2_main h5 {
+    font-size: 24px;
+}
+
+.page2_main article, p {
+    padding: 0.3rem;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem;
+}
+
+aside img {
+    width: 2.3rem;
+}
+
+aside p {
+    font-size: 30px;
+}
