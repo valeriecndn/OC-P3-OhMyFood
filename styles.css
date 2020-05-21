@@ -99,14 +99,23 @@ footer {
     justify-content: center;
 }
 
-.index_main h2, p {
-    padding: 1rem;
-    font-size: 25px;
+.index_main h2 {
+    font-size: 35px;
+}
+
+.index_main p {
+    font-size: 35px;
+    padding: 1.4rem;
 }
 
 .index_main img {
-    width: 2.3rem;
+    width: 2.7rem;
     text-align: center;
+
+}
+
+.carte-chic h2 {
+    font-size: 25px;
 }
 
 .btn {
