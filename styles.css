@@ -9,45 +9,57 @@
     --bg-palette: #fdfffd;
     --color-ohmy: #fdcb46;
 }
-/* ----------------------------------------- [ COULEURS & FONTS ] -------------------------------------------- */
+/* ----------------------------------------- [ BACKGROUNDS - FONTS - COLORS ] -------------------------------------------- */
 
-body { background-color: var( --bg-pages); }
-
+body { 
+    background-color: var( --bg-pages); 
+}
 header, footer, button { 
-    background-color: var( --bg-ohmy);
+    background-color: var( --bg-ohmy); 
     color: var( --color-ohmy); 
     font-family: 'Montserrat', sans-serif;
-    }
-
-.menu-note--colorfont { 
+}
+.note--colorfont { 
     background-color: var( --bg-note); 
     font-family: 'Devonshire', cursive;
 }
-.menu-chic--colorfont { 
+.chic--colorfont { 
     background-color: var( --bg-chic);
-    font-family: 'Croissant One', cursive;
+    font-family: 'Croissant One', cursive; 
 }
-.menu-delice--colorfont { 
+.delice--colorfont { 
     background-color: var( --bg-delice); 
     font-family: 'Dancing Script', cursive;
 }
-.menu-palette--colorfont { 
+.palette--colorfont { 
     background-color: var( --bg-palette); 
     font-family: 'Kaushan Script', cursive;
 }
-
+.menu-note--colorfont {
+    font-family: 'Kalam', cursive;
+    font-weight: bold;
+}
+.menu-delice--colorfont, .menu-palette--colorfont {
+    font-family: 'Kalam', cursive;
+}
+.menu-chic--colorfont {
+    font-family: 'Noto Serif', serif;
+}
 /* -----------------------------------------------------------------------------------------------------
 ------------------------------------------------- [ CSS ] ----------------------------------------------
  ----------------------------------------------------------------------------------------------------- */
 
 /* ----- Général  */
 
-* { /* par défault */
+* {
     margin: 0rem; 
     font-size: 20px; 
 } 
 
-a { text-decoration: none; color: unset; }
+a { 
+    text-decoration: none; 
+    color: unset; 
+}
 
 /* ----- Header + Footer */
 
@@ -56,6 +68,7 @@ header h1 {
     text-align: center;
     padding: 1.7rem;
     font-weight: bold;
+    font-size: 40px;
 }
 
 footer {
@@ -72,7 +85,7 @@ footer {
 .index_main {
     display: flex;
     justify-content: center;
-    margin: 3rem;
+    margin: 2rem;
 }
 
 .index_main section {
@@ -88,6 +101,7 @@ footer {
 
 .index_main h2, p {
     padding: 1rem;
+    font-size: 25px;
 }
 
 .index_main img {
