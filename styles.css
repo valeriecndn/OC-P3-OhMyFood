@@ -115,7 +115,6 @@ button {
 
 .menu-note--colorfont {
     font-family: 'Kalam', cursive;
-    font-weight: bold;
 }
 
 .note-soustitre {
@@ -308,6 +307,7 @@ button {
 .page4_main section {
     font-family: 'Kalam', cursive;
 }
+
 .page4_main h3 {
     font-size: 50px;
     text-align: center;
@@ -354,14 +354,6 @@ button {
     width: 230px;
 }
 
-
-
-
-
-
-
-
-
 /* ------------- Page 5 : La palette du goût  */
 
 .palette--colorfont { 
@@ -376,6 +368,81 @@ button {
     margin: 2rem;
     box-shadow: 1px 1px 8px rgb(179, 178, 178);
 } 
+
+.carte-detail-palette {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+.page5_main { 
+    width: auto;
+    height: auto;
+    padding: 1rem 1rem 4rem 1rem;
+    margin: 2rem;
+    box-shadow: 1px 1px 8px rgb(179, 178, 178);
+}
+
+.page5_main section {
+    font-family: 'Kalam', cursive;
+}
+
+.page5_main h3 {
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.page5_main article {
+    padding-bottom: 0.8rem;
+}
+
+.page5_main h5 {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    font-weight: normal;
+}
+
+.page5_main .plat {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page5_main p {
+    font-size: 16px;
+}
+
+.p5-partie-menu {
+    /* barres de séparation */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.p5-partie-menu img { 
+    /* barres de séparation */
+    height: 15px;  
+    width: 210px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* ------------- Page 6 : Mentions légales */
