@@ -90,6 +90,20 @@ footer {
 
 }
 
+.chic--colorfont { 
+    background-color: var( --bg-chic);
+    font-family: 'Croissant One', cursive; 
+}
+
+.menu-chic--colorfont {
+    font-family: 'Noto Serif', serif;
+}
+
+.delice--colorfont { 
+    background-color: var( --bg-delice); 
+    font-family: 'Dancing Script', cursive;
+}
+
 .carte-chic h2 {
     font-size: 25px;
 }
@@ -206,21 +220,13 @@ button {
 
 /* ------------- Page 3 : Le chic à la française */
 
-.chic--colorfont { 
-    background-color: var( --bg-chic);
-    font-family: 'Croissant One', cursive; 
-}
-
-.menu-chic--colorfont {
-    font-family: 'Noto Serif', serif;
-}
-
 .page3_main { 
     width: auto;
     height: auto;
     padding: 2rem;
     margin: 2rem;
     box-shadow: 1px 1px 8px rgb(179, 178, 178);
+    font-family: 'Noto Serif', serif;
 } 
 
 .carte-detail-chic {
@@ -238,6 +244,7 @@ button {
     text-align: center;
     padding: 3rem;
     font-size: 30px;
+    font-family: 'Croissant One', cursive; 
 }
 
 .page3_main article {
@@ -281,15 +288,6 @@ button {
 
 /* ------------- Page 4 : Le délice des papilles */
 
-.delice--colorfont { 
-    background-color: var( --bg-delice); 
-    font-family: 'Dancing Script', cursive;
-}
-
-.menu-delice--colorfont, .menu-palette--colorfont {
-    font-family: 'Kalam', cursive;
-}
-
 .carte-detail-delice {
     display: flex;
     justify-content: center;
@@ -297,6 +295,8 @@ button {
 }
 
 .page4_main { 
+    background-color: var( --bg-delice); 
+    font-family: 'Kalam', cursive;
     width: auto;
     height: auto;
     padding: 1rem 1rem 4rem 1rem;
@@ -304,15 +304,12 @@ button {
     box-shadow: 1px 1px 8px rgb(179, 178, 178);
 }
 
-.page4_main section {
-    font-family: 'Kalam', cursive;
-}
-
 .page4_main h3 {
     font-size: 50px;
     text-align: center;
     padding-top: 3rem;
     padding-bottom: 2rem;
+    font-family: 'Dancing Script', cursive;
 }
 
 .page4_main article {
@@ -358,7 +355,7 @@ button {
 
 .palette--colorfont { 
     background-color: var( --bg-palette); 
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Kalam', cursive;
 }
 
 .page3_main { 
@@ -383,16 +380,13 @@ button {
     box-shadow: 1px 1px 8px rgb(179, 178, 178);
 }
 
-.page5_main section {
-    font-family: 'Kalam', cursive;
-}
-
 .page5_main h3 {
     font-size: 50px;
     font-weight: normal;
     text-align: center;
     padding-top: 3rem;
     padding-bottom: 2rem;
+    font-family: 'Kaushan Script', cursive;
 }
 
 .page5_main article {
