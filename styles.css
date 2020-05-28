@@ -1,5 +1,4 @@
-
-/* ----------------------------------------- [ VARIABLES ] ------------------------------------------- */
+  /* ----------------------------------------- [ VARIABLES ] ------------------------------------------- */
 :root { 
     --bg-pages: white; 
     --bg-ohmy: #549c84;
@@ -7,10 +6,76 @@
     --bg-chic: #fff5fe;
     --bg-delice: #eeeeee;
     --bg-palette: #fdfffd;
-
     --color-ohmy: #fdcb46;
 }
 
+/* ----------------------------------------- [ STYLES SPECIFIQUES ] ------------------------------------------- */
+
+header, footer, button { 
+    background-color: var( --bg-ohmy); 
+    color: var( --color-ohmy); 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.note--colorfont { 
+    background-color: var( --bg-note); 
+    font-family: 'Devonshire', cursive;
+}
+
+.chic--colorfont { 
+    background-color: var( --bg-chic);
+    font-family: 'Croissant One', cursive; 
+}
+
+.delice--colorfont { 
+    background-color: var( --bg-delice); 
+    font-family: 'Dancing Script', cursive;
+}
+
+.palette--colorfont { 
+    background-color: var( --bg-palette); 
+    font-family: 'Kaushan Script', cursive;
+}
+
+.menu-note--font { 
+    font-family: 'Kalam', cursive; 
+}
+
+.menu-chic--font { 
+    font-family: 'Noto Serif', serif; 
+    color: #cb802f;
+}
+
+.menu-delice--font { 
+    font-family: 'Kalam', cursive; 
+    color: #0887fb;
+}
+
+.menu-palette--font { 
+    font-family: 'Kalam', cursive; 
+    color: #85cb65;
+}
+
+.gradient-chic {
+    background: -webkit-linear-gradient(-45deg, #cb802f 1%,#8f5aff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #cb802f 1%,#8f5aff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+}
+.gradient-delice {
+    background: -webkit-linear-gradient(left, #0028dd 0%,#7dc3f2 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #0028dd 0%,#7dc3f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    padding: 0.3rem;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+}
+
+.gradient-palette {
+    background: -webkit-linear-gradient(-45deg, #4d9f42 1%,#bfff82 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #4d9f42 1%,#bfff82 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+}
 /* -----------------------------------------------------------------------------------------------------
 ------------------------------------------------- [ CSS ] ----------------------------------------------
  ----------------------------------------------------------------------------------------------------- */
@@ -22,22 +87,16 @@
     font-size: 20px; 
 } 
 
+body { 
+    background-color: var( --bg-pages); 
+}
+
 a { 
     text-decoration: none; 
     color: unset; 
 }
 
-body { 
-    background-color: var( --bg-pages); 
-}
-
 /* ------------- Header + Footer */
-
-header, footer, button { 
-    background-color: var( --bg-ohmy); 
-    color: var( --color-ohmy); 
-    font-family: 'Montserrat', sans-serif;
-}
 
 header h1 {
     width: auto;
@@ -87,21 +146,6 @@ footer {
 .index_main img {
     width: 2.7rem;
     text-align: center;
-
-}
-
-.chic--colorfont { 
-    background-color: var( --bg-chic);
-    font-family: 'Croissant One', cursive; 
-}
-
-.menu-chic--colorfont {
-    font-family: 'Noto Serif', serif;
-}
-
-.delice--colorfont { 
-    background-color: var( --bg-delice); 
-    font-family: 'Dancing Script', cursive;
 }
 
 .carte-chic h2 {
@@ -121,15 +165,6 @@ button {
 }
     
 /* ------------- Page 2 : La note enchantée */
-
-.note--colorfont { 
-    background-color: var( --bg-note); 
-    font-family: 'Devonshire', cursive;
-}
-
-.menu-note--colorfont {
-    font-family: 'Kalam', cursive;
-}
 
 .note-soustitre {
     font-family: 'Montserrat', sans-serif;
@@ -286,6 +321,17 @@ button {
     width: 300px;
 }
 
+.chic-entrée {
+    color: #cb802f;
+}
+
+.chic-plat {
+    color: #a56799;
+}
+
+.chic-dessert {
+    color: #6e4ccc;
+}
 /* ------------- Page 4 : Le délice des papilles */
 
 .carte-detail-delice {
@@ -352,11 +398,6 @@ button {
 }
 
 /* ------------- Page 5 : La palette du goût  */
-
-.palette--colorfont { 
-    background-color: var( --bg-palette); 
-    font-family: 'Kalam', cursive;
-}
 
 .page3_main { 
     width: auto;
