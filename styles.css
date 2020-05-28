@@ -5,57 +5,17 @@
     --bg-ohmy: #549c84;
     --bg-note: #fae0df;
     --bg-chic: #fff5fe;
-    --bg-delice: #f9f9f9;
+    --bg-delice: #eeeeee;
     --bg-palette: #fdfffd;
+
     --color-ohmy: #fdcb46;
 }
-/* ----------------------------------------- [ BACKGROUNDS - FONTS - COLORS ] -------------------------------------------- */
 
-body { 
-    background-color: var( --bg-pages); 
-}
-header, footer, button { 
-    background-color: var( --bg-ohmy); 
-    color: var( --color-ohmy); 
-    font-family: 'Montserrat', sans-serif;
-}
-.note--colorfont { 
-    background-color: var( --bg-note); 
-    font-family: 'Devonshire', cursive;
-}
-.chic--colorfont { 
-    background-color: var( --bg-chic);
-    font-family: 'Croissant One', cursive; 
-}
-.delice--colorfont { 
-    background-color: var( --bg-delice); 
-    font-family: 'Dancing Script', cursive;
-}
-.palette--colorfont { 
-    background-color: var( --bg-palette); 
-    font-family: 'Kaushan Script', cursive;
-}
-.menu-note--colorfont {
-    font-family: 'Kalam', cursive;
-    font-weight: bold;
-}
-.menu-delice--colorfont, .menu-palette--colorfont {
-    font-family: 'Kalam', cursive;
-}
-.menu-chic--colorfont {
-    font-family: 'Noto Serif', serif;
-}
-.note-soustitre {
-    font-family: 'Montserrat', sans-serif;
-}
-.page2_main article {
-    font-family: 'Kalam', cursive;
-}
 /* -----------------------------------------------------------------------------------------------------
 ------------------------------------------------- [ CSS ] ----------------------------------------------
  ----------------------------------------------------------------------------------------------------- */
 
-/* ----- Général  */
+/* ------------- Général  */
 
 * {
     margin: 0rem; 
@@ -67,7 +27,17 @@ a {
     color: unset; 
 }
 
-/* ----- Header + Footer */
+body { 
+    background-color: var( --bg-pages); 
+}
+
+/* ------------- Header + Footer */
+
+header, footer, button { 
+    background-color: var( --bg-ohmy); 
+    color: var( --color-ohmy); 
+    font-family: 'Montserrat', sans-serif;
+}
 
 header h1 {
     width: auto;
@@ -86,7 +56,7 @@ footer {
     bottom: 0%;
 }
 
-/* ----- Page index : Accueil */
+/* ------------- Page index : Accueil */
 
 .index_main {
     display: flex;
@@ -136,17 +106,29 @@ button {
     border-radius: 10px;
 }
     
-/* ----- Pages Menus */
+/* ------------- Page 2 : La note enchantée */
 
-.page2_main, .page3_main, .page4_main, .page5_main { 
+.note--colorfont { 
+    background-color: var( --bg-note); 
+    font-family: 'Devonshire', cursive;
+}
+
+.menu-note--colorfont {
+    font-family: 'Kalam', cursive;
+    font-weight: bold;
+}
+
+.note-soustitre {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page2_main { 
     width: auto;
     height: auto;
     padding: 3rem;
     margin: 2rem;
     box-shadow: 1px 1px 8px rgb(179, 178, 178);
 }
-
-/* ----- Page 2 : La note enchantée */
 
 .note-soustitre {
     text-align: center;
@@ -180,6 +162,7 @@ button {
 .page2_main article {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    font-family: 'Kalam', cursive;
 }
 
 .page2_main p {
@@ -189,7 +172,6 @@ button {
 .page2_main .plat {
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
-    text-align: center;
     display: flex;
     justify-content: space-between;
 }
@@ -215,6 +197,7 @@ button {
     justify-content: space-between;
     padding: 0.8rem 0rem 0.8rem 0rem;
     text-align: center;
+    align-items: center;
 }
 
 .p2-partie-menu img { 
@@ -222,7 +205,24 @@ button {
     height: 1.5rem;  
 }
 
-/* ----- Page 3 : Le chic à la française */
+/* ------------- Page 3 : Le chic à la française */
+
+.chic--colorfont { 
+    background-color: var( --bg-chic);
+    font-family: 'Croissant One', cursive; 
+}
+
+.menu-chic--colorfont {
+    font-family: 'Noto Serif', serif;
+}
+
+.page3_main { 
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    margin: 2rem;
+    box-shadow: 1px 1px 8px rgb(179, 178, 178);
+} 
 
 .carte-detail-chic {
     display: flex;
@@ -260,7 +260,6 @@ button {
     margin-bottom: 0.8rem;
     padding-left: 5rem;
     padding-right: 5rem;
-    text-align: center;
     display: flex;
     justify-content: space-between;
 }
@@ -270,6 +269,7 @@ button {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -279,3 +279,114 @@ button {
     height: 30px;  
     width: 300px;
 }
+
+/* ------------- Page 4 : Le délice des papilles */
+
+.delice--colorfont { 
+    background-color: var( --bg-delice); 
+    font-family: 'Dancing Script', cursive;
+}
+
+.menu-delice--colorfont, .menu-palette--colorfont {
+    font-family: 'Kalam', cursive;
+}
+
+.carte-detail-delice {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+.page4_main { 
+    width: auto;
+    height: auto;
+    padding: 1rem 1rem 4rem 1rem;
+    margin: 2rem;
+    box-shadow: 1px 1px 8px rgb(179, 178, 178);
+}
+
+.page4_main section {
+    font-family: 'Kalam', cursive;
+}
+.page4_main h3 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.page4_main article {
+    padding-bottom: 0.8rem;
+}
+
+.page4_main h5 {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    font-weight: normal;
+}
+
+.page4_main .plat {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page4_main p {
+    font-size: 16px;
+}
+
+.p4-partie-menu {
+    /* barres de séparation */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.p4-partie-menu img { 
+    /* barres de séparation */
+    height: 17px;  
+    width: 230px;
+}
+
+
+
+
+
+
+
+
+
+/* ------------- Page 5 : La palette du goût  */
+
+.palette--colorfont { 
+    background-color: var( --bg-palette); 
+    font-family: 'Kaushan Script', cursive;
+}
+
+.page3_main { 
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    margin: 2rem;
+    box-shadow: 1px 1px 8px rgb(179, 178, 178);
+} 
+
+
+/* ------------- Page 6 : Mentions légales */
+
+.page3_main { 
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    margin: 2rem;
+    box-shadow: 1px 1px 8px rgb(179, 178, 178);
+} 
+
+
+
