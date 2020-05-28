@@ -141,7 +141,7 @@ button {
 .page2_main, .page3_main, .page4_main, .page5_main { 
     width: auto;
     height: auto;
-    padding: 2rem;
+    padding: 3rem;
     margin: 2rem;
     box-shadow: 1px 1px 8px rgb(179, 178, 178);
 }
@@ -184,6 +184,14 @@ button {
 
 .page2_main p {
     padding: 0.3rem;
+}
+
+.page2_main .plat {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .page2_main aside {
