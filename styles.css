@@ -57,23 +57,26 @@ header, footer, button {
 }
 
 .gradient-chic {
-    background: -webkit-linear-gradient(-45deg, #cb802f 1%,#8f5aff 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #cb802f 1%,#8f5aff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -webkit-linear-gradient(-45deg, #cb802f 1%,#8f5aff 100%); 
+    background: linear-gradient(135deg, #cb802f 1%,#8f5aff 100%); 
     -webkit-text-fill-color:transparent;
+    background-clip:text;
     -webkit-background-clip:text;
 }
 .gradient-delice {
-    background: -webkit-linear-gradient(left, #0028dd 0%,#7dc3f2 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #0028dd 0%,#7dc3f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    padding: 0.3rem;
+    background: -webkit-linear-gradient(left, #0028dd 0%,#7dc3f2 100%); 
+    background: linear-gradient(to right, #0028dd 0%,#7dc3f2 100%); 
+    padding: 0.3em;
     -webkit-text-fill-color:transparent;
+    background-clip:text;
     -webkit-background-clip:text;
 }
 
 .gradient-palette {
-    background: -webkit-linear-gradient(-45deg, #4d9f42 1%,#bfff82 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #4d9f42 1%,#bfff82 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -webkit-linear-gradient(-45deg, #4d9f42 1%,#bfff82 100%); 
+    background: linear-gradient(135deg, #4d9f42 1%,#bfff82 100%); 
     -webkit-text-fill-color:transparent;
+    background-clip:text;
     -webkit-background-clip:text;
 }
 /* -----------------------------------------------------------------------------------------------------
@@ -83,8 +86,7 @@ header, footer, button {
 /* ------------- Général  */
 
 * {
-    margin: 0rem; 
-    font-size: 20px; 
+    margin: 0; 
 } 
 
 body { 
@@ -94,6 +96,7 @@ body {
 a { 
     text-decoration: none; 
     color: unset; 
+    padding: 1rem;
 }
 
 /* ------------- Header + Footer */
@@ -101,18 +104,18 @@ a {
 header h1 {
     width: auto;
     text-align: center;
-    padding: 1.7rem;
+    padding: 1.7em;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 3em;
 }
 
 footer {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding: 1rem;
     position: fixed;
-    bottom: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 /* ------------- Page index : Accueil */
@@ -124,10 +127,10 @@ footer {
 }
 
 .index_main section {
-    width: 20rem;
-    height: 30rem;
-    margin: 3rem;
-    box-shadow: 1px 1px 8px rgb(179, 178, 178);
+    width: 20em;
+    height: 30em;
+    margin: 3em;
+    box-shadow: 0.3em 0.3em 1em rgb(179, 178, 178);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,33 +138,33 @@ footer {
 }
 
 .index_main h2 {
-    font-size: 35px;
+    font-size: 2em;
 }
 
 .index_main p {
-    font-size: 35px;
-    padding: 1.4rem;
+    font-size: 2em;
+    padding: 1.4em;
 }
 
 .index_main img {
-    width: 2.7rem;
+    width: 2.7em;
     text-align: center;
 }
 
 .carte-chic h2 {
-    font-size: 25px;
+    font-size: 2em;
 }
 
 .btn {
     display: flex;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-bottom: 5em;
 }
 
 button {
-    padding: 0.5rem 2rem;
-    border: 1px var(--bg-ohmy) solid ;
-    border-radius: 10px;
+    padding: 0.5em 2em;
+    border: 0.3em var(--bg-ohmy) solid ;
+    border-radius: 0.7em;
 }
     
 /* ------------- Page 2 : La note enchantée */
@@ -173,21 +176,21 @@ button {
 .page2_main { 
     width: auto;
     height: auto;
-    padding: 3rem;
-    margin: 2rem;
-    box-shadow: 1px 1px 8px rgb(179, 178, 178);
+    padding: 3em;
+    margin: 2em;
+    box-shadow: 0.3em 0.3em 1em rgb(179, 178, 178);
 }
 
 .note-soustitre {
     text-align: center;
-    font-size: 28px;
-    padding: 3rem 0rem 1.5rem 0rem;
+    font-size: 2em;
+    padding: 3em 0em 1.5em 0em;
 }
 
 .carte-detail-note {
     display: flex;
     justify-content: center;
-    margin-bottom: 6rem;
+    margin-bottom: 6em;
 }
 
 .page2_main .logo {
@@ -196,30 +199,30 @@ button {
 
 .page2_main h4 {
     text-align: center;
-    font-size: 48px;
-    margin-bottom: 1.5rem;
+    font-size: 2em;
+    margin-bottom: 1.5em;
 }
 
 .page2_main h5 {
     text-align: center;
-    font-size: 24px;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    font-size: 2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 .page2_main article {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
     font-family: 'Kalam', cursive;
 }
 
 .page2_main p {
-    padding: 0.3rem;
+    padding: 0.3em;
 }
 
 .page2_main .plat {
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
     display: flex;
     justify-content: space-between;
 }
@@ -228,29 +231,29 @@ button {
     text-align: center;
     display: flex;
     justify-content: center;
-    margin: 1.5rem;
+    margin: 1.5em;
 }
 
 .page2_main aside img {
-    width: 2.3rem;
+    width: 2.3em;
 }
 
 .page2_main aside p {
-    font-size: 30px;
+    font-size: 2em;
 }
 
 .p2-partie-menu { 
     /* barres de séparation */
     display: flex;
     justify-content: space-between;
-    padding: 0.8rem 0rem 0.8rem 0rem;
+    padding: 0.8em 0em 0.8em 0em;
     text-align: center;
     align-items: center;
 }
 
 .p2-partie-menu img { 
     /* barres de séparation */
-    height: 1.5rem;  
+    height: 1.5em;  
 }
 
 /* ------------- Page 3 : Le chic à la française */
@@ -258,49 +261,49 @@ button {
 .page3_main { 
     width: auto;
     height: auto;
-    padding: 2rem;
-    margin: 2rem;
-    box-shadow: 1px 1px 8px rgb(179, 178, 178);
+    padding: 2em;
+    margin: 2em;
+    box-shadow: 0.3em 0.3em 1em rgb(179, 178, 178);
     font-family: 'Noto Serif', serif;
 } 
 
 .carte-detail-chic {
     display: flex;
     justify-content: center;
-    margin-bottom: 6rem;
+    margin-bottom: 6em;
 }
 
 .page3_main {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 .page3_main h3 {
     text-align: center;
-    padding: 3rem;
-    font-size: 30px;
+    padding: 3em;
+    font-size: 2em;
     font-family: 'Croissant One', cursive; 
 }
 
 .page3_main article {
-    margin-bottom: 4rem;
+    margin-bottom: 4em;
 }
 
 .page3_main h5 {
     text-align: center;
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
 }
 
 .page3_main p {
-    font-size: 18px;
+    font-size: 2em;
 }
 
 .page3_main .plat {
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    padding-left: 5em;
+    padding-right: 5em;
     display: flex;
     justify-content: space-between;
 }
@@ -311,14 +314,14 @@ button {
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .p3-partie-menu img { 
     /* barres de séparation */
-    height: 30px;  
-    width: 300px;
+    height: 1.8em;  
+    width: 14em;
 }
 
 .chic-entrée {
@@ -337,7 +340,7 @@ button {
 .carte-detail-delice {
     display: flex;
     justify-content: center;
-    margin-bottom: 6rem;
+    margin-bottom: 6em;
 }
 
 .page4_main { 
@@ -345,40 +348,40 @@ button {
     font-family: 'Kalam', cursive;
     width: auto;
     height: auto;
-    padding: 1rem 1rem 4rem 1rem;
-    margin: 2rem;
-    box-shadow: 1px 1px 8px rgb(179, 178, 178);
+    padding: 1em 1em 4em 1em;
+    margin: 2em;
+    box-shadow: 0.3em 0.3em 1em rgb(179, 178, 178);
 }
 
 .page4_main h3 {
-    font-size: 50px;
+    font-size: 2em;
     text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding-top: 3em;
+    padding-bottom: 2em;
     font-family: 'Dancing Script', cursive;
 }
 
 .page4_main article {
-    padding-bottom: 0.8rem;
+    padding-bottom: 0.8em;
 }
 
 .page4_main h5 {
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
     font-weight: normal;
 }
 
 .page4_main .plat {
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    padding-left: 4em;
+    padding-right: 4em;
     display: flex;
     justify-content: space-between;
 }
 
 .page4_main p {
-    font-size: 16px;
+    font-size: 2em;
 }
 
 .p4-partie-menu {
@@ -387,14 +390,14 @@ button {
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .p4-partie-menu img { 
     /* barres de séparation */
-    height: 17px;  
-    width: 230px;
+    height: 1.8em;  
+    width: 15em;
 }
 
 /* ------------- Page 5 : La palette du goût  */
@@ -402,55 +405,55 @@ button {
 .page3_main { 
     width: auto;
     height: auto;
-    padding: 2rem;
-    margin: 2rem;
-    box-shadow: 1px 1px 8px rgb(179, 178, 178);
+    padding: 2em;
+    margin: 2em;
+    box-shadow: 0.3em 0.3em 1em rgb(179, 178, 178);
 } 
 
 .carte-detail-palette {
     display: flex;
     justify-content: center;
-    margin-bottom: 6rem;
+    margin-bottom: 6em;
 }
 
 .page5_main { 
     width: auto;
     height: auto;
-    padding: 1rem 1rem 4rem 1rem;
-    margin: 2rem;
-    box-shadow: 1px 1px 8px rgb(179, 178, 178);
+    padding: 1em 1em 4em 1em;
+    margin: 2em;
+    box-shadow: 0.3em 0.3em 1em rgb(179, 178, 178);
 }
 
 .page5_main h3 {
-    font-size: 50px;
+    font-size: 2em;
     font-weight: normal;
     text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding-top: 3em;
+    padding-bottom: 2em;
     font-family: 'Kaushan Script', cursive;
 }
 
 .page5_main article {
-    padding-bottom: 0.8rem;
+    padding-bottom: 0.8em;
 }
 
 .page5_main h5 {
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
     font-weight: normal;
 }
 
 .page5_main .plat {
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    padding-left: 3em;
+    padding-right: 3em;
     display: flex;
     justify-content: space-between;
 }
 
 .page5_main p {
-    font-size: 16px;
+    font-size: 2em;
 }
 
 .p5-partie-menu {
@@ -459,14 +462,14 @@ button {
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .p5-partie-menu img { 
     /* barres de séparation */
-    height: 15px;  
-    width: 210px;
+    height: 1.4em;  
+    width: 13em;
 }
 
 /* ------------- Page 6 : Mentions légales */
@@ -474,17 +477,18 @@ button {
 .page6_main { 
     width: auto;
     height: auto;
-    margin: 3rem 6rem 6rem 6rem;
+    margin: 3em 6em 6em 6em;
     
 } 
 
 .page6_main p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 2em;
     text-align: justify;
-    padding-bottom: 1rem;
+    padding-bottom: 1em;
 }
 
 /* -----------------------------------------------------------------------------------------------------
 -------------------------------------------- [ MEDIA QUERIES ] -----------------------------------------
  ----------------------------------------------------------------------------------------------------- */
+
