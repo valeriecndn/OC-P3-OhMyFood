@@ -264,7 +264,7 @@ button {
 .page3_main { 
     width: auto;
     height: auto;
-    padding: 2em;
+    padding: 3em 1em;
     margin: 2em;
     box-shadow: 0.3em 0.3em 1em rgb(179, 178, 178);
     font-family: 'Noto Serif', serif;
@@ -276,16 +276,11 @@ button {
     margin-bottom: 6em;
 }
 
-.page3_main {
-    padding-top: 5em;
-    padding-bottom: 5em;
-}
-
 .page3_main h3 {
+    font-family: 'Croissant One', cursive;
     text-align: center;
-    padding: 3em;
+    padding: 2em;
     font-size: 2em;
-    font-family: 'Croissant One', cursive; 
 }
 
 .page3_main article {
@@ -299,7 +294,7 @@ button {
 }
 
 .page3_main p {
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .page3_main .plat {
@@ -309,22 +304,6 @@ button {
     padding-right: 5em;
     display: flex;
     justify-content: space-between;
-}
-
-.p3-partie-menu {
-    /* barres de séparation */
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
-.p3-partie-menu img { 
-    /* barres de séparation */
-    height: 1.8em;  
-    width: 14em;
 }
 
 .chic-entrée {
@@ -338,6 +317,26 @@ button {
 .chic-dessert {
     color: #6e4ccc;
 }
+
+/* barres de séparation */
+
+.p3-partie-menu {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.p3-partie-menu img { 
+    width: 12em;
+}
+
+..rotation {
+    transform: rotate(0.5turn)
+} 
+
 /* ------------- Page 4 : Le délice des papilles */
 
 .carte-detail-delice {
@@ -405,7 +404,7 @@ button {
 
 /* ------------- Page 5 : La palette du goût  */
 
-.page3_main { 
+.page5_main { 
     width: auto;
     height: auto;
     padding: 2em;
