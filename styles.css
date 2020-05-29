@@ -96,7 +96,6 @@ body {
 a { 
     text-decoration: none; 
     color: unset; 
-    padding: 1rem;
 }
 
 /* ------------- Header + Footer */
@@ -104,14 +103,16 @@ a {
 header h1 {
     width: auto;
     text-align: center;
-    padding: 1.7em;
+    padding: 0.5em;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 3.3em;
 }
 
 footer {
+    font-size: 1.2em;
     display: flex;
     justify-content: space-between;
+    padding: 1em;
     position: fixed;
     left: 0;
     right: 0;
@@ -123,12 +124,12 @@ footer {
 .index_main {
     display: flex;
     justify-content: center;
-    margin: 2rem;
+    margin: 2em;
 }
 
 .index_main section {
-    width: 20em;
-    height: 30em;
+    width: 23em;
+    height: 31em;
     margin: 3em;
     box-shadow: 0.3em 0.3em 1em rgb(179, 178, 178);
     display: flex;
@@ -138,12 +139,16 @@ footer {
 }
 
 .index_main h2 {
-    font-size: 2em;
+    font-size: 2.3em;
+}
+
+.carte-chic h2 {
+    font-size: 1.5em;
 }
 
 .index_main p {
     font-size: 2em;
-    padding: 1.4em;
+    padding: 0.8em;
 }
 
 .index_main img {
@@ -151,46 +156,40 @@ footer {
     text-align: center;
 }
 
-.carte-chic h2 {
-    font-size: 2em;
-}
-
 .btn {
     display: flex;
     justify-content: center;
-    margin-bottom: 5em;
+    margin-bottom: 8em;
 }
 
 button {
-    padding: 0.5em 2em;
+    font-size: 1.2em;
+    padding: 0.3em 3em;
     border: 0.3em var(--bg-ohmy) solid ;
     border-radius: 0.7em;
 }
     
 /* ------------- Page 2 : La note enchantée */
 
-.note-soustitre {
-    font-family: 'Montserrat', sans-serif;
-}
-
 .page2_main { 
     width: auto;
     height: auto;
-    padding: 3em;
+    padding: 4em;
     margin: 2em;
     box-shadow: 0.3em 0.3em 1em rgb(179, 178, 178);
 }
 
 .note-soustitre {
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 2em;
-    padding: 3em 0em 1.5em 0em;
+    margin-top: 2em;
 }
 
 .carte-detail-note {
     display: flex;
     justify-content: center;
-    margin-bottom: 6em;
+    margin-bottom: 7em;
 }
 
 .page2_main .logo {
@@ -199,20 +198,19 @@ button {
 
 .page2_main h4 {
     text-align: center;
-    font-size: 2em;
-    margin-bottom: 1.5em;
+    font-size: 3em;
+    margin-bottom: 1em;
 }
 
 .page2_main h5 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.6em;
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
 
 .page2_main article {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
     font-family: 'Kalam', cursive;
 }
 
@@ -220,9 +218,12 @@ button {
     padding: 0.3em;
 }
 
+.page2_main span {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
 .page2_main .plat {
-    margin-top: 0.8em;
-    margin-bottom: 0.8em;
     display: flex;
     justify-content: space-between;
 }
@@ -231,19 +232,22 @@ button {
     text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 1.5em;
 }
 
 .page2_main aside img {
-    width: 2.3em;
+    width: 2.5em;
+    height: 2.5em;
 }
 
 .page2_main aside p {
     font-size: 2em;
 }
 
+/* barres de séparation */
+
 .p2-partie-menu { 
-    /* barres de séparation */
     display: flex;
     justify-content: space-between;
     padding: 0.8em 0em 0.8em 0em;
@@ -252,7 +256,6 @@ button {
 }
 
 .p2-partie-menu img { 
-    /* barres de séparation */
     height: 1.5em;  
 }
 
