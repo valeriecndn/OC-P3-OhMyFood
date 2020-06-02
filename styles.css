@@ -7,6 +7,7 @@
     --bg-delice: #eeeeee;
     --bg-palette: #fdfffd;
     --color-ohmy: #fdcb46;
+    --color-note: #382627;
 }
 
 /* ----------------------------------------- [ STYLES SPECIFIQUES ] ------------------------------------------- */
@@ -20,6 +21,7 @@ header, footer, button {
 .note--colorfont { 
     background-color: var( --bg-note); 
     font-family: 'Devonshire', cursive;
+    color: var(--color-note);
 }
 
 .chic--colorfont { 
@@ -38,7 +40,7 @@ header, footer, button {
 }
 
 .menu-note--font { 
-    font-family: 'Kalam', cursive; 
+    font-family: 'Kalam', cursive;
 }
 
 .menu-chic--font { 
@@ -97,6 +99,17 @@ a {
     text-decoration: none; 
     color: unset; 
 }
+
+.note-soustitre {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+.rotation {
+    transform: rotate(0.5turn)
+} 
 
 /* ------------- Header + Footer */
 
@@ -179,13 +192,6 @@ button {
     box-shadow: 0.3em 0.3em 1em rgb(179, 178, 178);
 }
 
-.note-soustitre {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-size: 2em;
-    margin-top: 2em;
-}
-
 .carte-detail-note {
     display: flex;
     justify-content: center;
@@ -196,13 +202,13 @@ button {
     text-align: center;
 }
 
-.page2_main h4 {
+.page2_main h3 {
     text-align: center;
-    font-size: 3em;
+    font-size: 2.8em;
     margin-bottom: 1em;
 }
 
-.page2_main h5 {
+.page2_main h4 {
     text-align: center;
     font-size: 1.6em;
     padding-left: 0.5em;
@@ -287,13 +293,18 @@ button {
     margin-bottom: 4em;
 }
 
-.page3_main h5 {
+.page3_main h4 {
     text-align: center;
     padding-left: 0.7em;
     padding-right: 0.7em;
+    font-size: 0.9em;
 }
 
 .page3_main p {
+    font-size: 0.7em;
+}
+
+.page3_main span {
     font-size: 1em;
 }
 
@@ -333,10 +344,6 @@ button {
     width: 12em;
 }
 
-..rotation {
-    transform: rotate(0.5turn)
-} 
-
 /* ------------- Page 4 : Le délice des papilles */
 
 .carte-detail-delice {
@@ -367,7 +374,7 @@ button {
     padding-bottom: 0.8em;
 }
 
-.page4_main h5 {
+.page4_main h4 {
     padding-left: 0.6em;
     padding-right: 0.6em;
     font-weight: normal;
@@ -439,7 +446,7 @@ button {
     padding-bottom: 0.8em;
 }
 
-.page5_main h5 {
+.page5_main h4 {
     padding-left: 0.6em;
     padding-right: 0.6em;
     font-weight: normal;
