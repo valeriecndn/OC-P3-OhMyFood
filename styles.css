@@ -46,6 +46,7 @@ header, footer, button {
 .menu-chic--font { 
     font-family: 'Noto Serif', serif; 
     color: #cb802f;
+    font-weight: bold;
 }
 
 .menu-delice--font { 
@@ -108,7 +109,7 @@ a {
 }
 
 .rotation {
-    transform: rotate(0.5turn)
+    transform: rotateY(0.5turn)
 } 
 
 /* ------------- Header + Footer */
@@ -160,8 +161,8 @@ footer {
 }
 
 .index_main p {
-    font-size: 2em;
-    padding: 0.8em;
+    font-size: 3em;
+    padding: 0.2em;
 }
 
 .index_main img {
@@ -216,7 +217,7 @@ button {
 }
 
 .page2_main article {
-    padding-bottom: 1.5em;
+    padding-bottom: 3em;
     font-family: 'Kalam', cursive;
 }
 
@@ -227,6 +228,7 @@ button {
 .page2_main span {
     font-weight: bold;
     font-size: 1.1em;
+    padding-right: 0.5em;
 }
 
 .page2_main .plat {
@@ -285,8 +287,9 @@ button {
 .page3_main h3 {
     font-family: 'Croissant One', cursive;
     text-align: center;
-    padding: 2em;
-    font-size: 2em;
+    padding: 1.5em;
+    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 .page3_main article {
@@ -301,7 +304,7 @@ button {
 }
 
 .page3_main p {
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 
 .page3_main span {
@@ -315,6 +318,7 @@ button {
     padding-right: 5em;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .chic-entrée {
@@ -354,19 +358,19 @@ button {
 
 .page4_main { 
     background-color: var( --bg-delice); 
-    font-family: 'Kalam', cursive;
+    font-family: kalam;
     width: auto;
     height: auto;
-    padding: 1em 1em 4em 1em;
+    padding: 1em 1.5em 4em 1.5em;
     margin: 2em;
     box-shadow: 0.3em 0.3em 1em rgb(179, 178, 178);
 }
 
 .page4_main h3 {
-    font-size: 2em;
+    font-size: 3.7em;
     text-align: center;
-    padding-top: 3em;
-    padding-bottom: 2em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
     font-family: 'Dancing Script', cursive;
 }
 
@@ -387,10 +391,11 @@ button {
     padding-right: 4em;
     display: flex;
     justify-content: space-between;
+    font-size: 0.9em;
 }
 
-.page4_main p {
-    font-size: 2em;
+.page4_main span {
+    font-size: 1.3em;
 }
 
 .p4-partie-menu {
@@ -405,8 +410,7 @@ button {
 
 .p4-partie-menu img { 
     /* barres de séparation */
-    height: 1.8em;  
-    width: 15em;
+    width: 13em;
 }
 
 /* ------------- Page 5 : La palette du goût  */
@@ -417,6 +421,7 @@ button {
     padding: 2em;
     margin: 2em;
     box-shadow: 0.3em 0.3em 1em rgb(179, 178, 178);
+    font-family: 'Kalam', cursive;
 } 
 
 .carte-detail-palette {
@@ -434,11 +439,11 @@ button {
 }
 
 .page5_main h3 {
-    font-size: 2em;
+    font-size: 3.5em;
     font-weight: normal;
     text-align: center;
-    padding-top: 3em;
-    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
     font-family: 'Kaushan Script', cursive;
 }
 
@@ -447,12 +452,14 @@ button {
 }
 
 .page5_main h4 {
-    padding-left: 0.6em;
-    padding-right: 0.6em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
     font-weight: normal;
+    font-size: 1em;
 }
 
 .page5_main .plat {
+    font-size: 0.9em;
     margin-top: 0.8em;
     margin-bottom: 0.8em;
     padding-left: 3em;
@@ -461,8 +468,8 @@ button {
     justify-content: space-between;
 }
 
-.page5_main p {
-    font-size: 2em;
+.page5_main span {
+    font-weight: bold;
 }
 
 .p5-partie-menu {
@@ -477,7 +484,6 @@ button {
 
 .p5-partie-menu img { 
     /* barres de séparation */
-    height: 1.4em;  
     width: 13em;
 }
 
