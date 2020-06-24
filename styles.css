@@ -82,6 +82,57 @@ header, footer, button {
     background-clip:text;
     -webkit-background-clip:text;
 }
+
+/* ----------------------------------------- [ ANIMATIONS ] ------------------------------------------- */
+
+/* effet ZOOM OPAQUE des cartes accueil */
+@keyframes zoom-anim {
+    from { 
+        transform: scale(1); 
+    }
+    to { 
+        transform: scale(1.20); 
+        opacity: 50%;
+        overflow: hidden;
+
+    }
+
+}
+.zoom-anim:hover {
+    animation: zoom-anim 1s;
+    animation-fill-mode: forwards;
+}
+
+/* effet WIGGLE des sections "mentions légales + "contactez-nous" */
+@keyframes wiggle_anim {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(-3deg);
+    }
+    100% {
+        transform: rotate(3deg);
+    }
+}
+.wiggle:hover {
+    animation: wiggle_anim 0.1s infinite;
+}
+
+/* effet SOULIGNEMENT des titres pour les parties des menus */
+.underline-anim::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid;
+    padding-bottom: 0.3em;
+    width: 0%;
+    transition: all 1s ease; 
+
+}
+.underline-anim:hover::after {
+    width: 100%;
+}
+
 /* -----------------------------------------------------------------------------------------------------
 ------------------------------------------------- [ CSS ] ----------------------------------------------
  ----------------------------------------------------------------------------------------------------- */
@@ -108,7 +159,7 @@ a {
     margin-top: 2em;
 }
 
-.rotation {
+.rotation { /* barre de séparations */
     transform: rotateY(0.5turn)
 } 
 
@@ -142,14 +193,14 @@ footer {
 }
 
 .index_main section {
-    width: 23em;
-    height: 31em;
-    margin: 3em;
-    box-shadow: 0.3em 0.3em 1em rgb(179, 178, 178);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 23em;
+    height: 31em;
+    margin: 3em;
+    box-shadow: 0.3em 0.3em 1em rgb(179, 178, 178);
 }
 
 .index_main h2 {
@@ -298,8 +349,8 @@ button {
 
 .page3_main h4 {
     text-align: center;
-    padding-left: 0.7em;
-    padding-right: 0.7em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     font-size: 0.9em;
 }
 
@@ -358,7 +409,7 @@ button {
 
 .page4_main { 
     background-color: var( --bg-delice); 
-    font-family: kalam;
+    font-family: 'Kalam', cursive;
     width: auto;
     height: auto;
     padding: 1em 1.5em 4em 1.5em;
@@ -379,8 +430,8 @@ button {
 }
 
 .page4_main h4 {
-    padding-left: 0.6em;
-    padding-right: 0.6em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     font-weight: normal;
 }
 
@@ -452,8 +503,8 @@ button {
 }
 
 .page5_main h4 {
-    padding-left: 0.2em;
-    padding-right: 0.2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     font-weight: normal;
     font-size: 1em;
 }
@@ -492,18 +543,18 @@ button {
 .page6_main { 
     width: auto;
     height: auto;
-    margin: 3em 6em 6em 6em;
+    margin: 3em 10em 6em 10em;
     
 } 
 
 .page6_main p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
+    font-size: 0.8em;
     text-align: justify;
     padding-bottom: 1em;
 }
 
 /* -----------------------------------------------------------------------------------------------------
--------------------------------------------- [ MEDIA QUERIES ] -----------------------------------------
+---------------------------------------------- [ RESPONSIVE ] ------------------------------------------
  ----------------------------------------------------------------------------------------------------- */
 
