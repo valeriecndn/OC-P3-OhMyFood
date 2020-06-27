@@ -103,7 +103,39 @@ header, footer, button {
     animation-fill-mode: forwards;
 }
 
-/* effet WIGGLE des sections "mentions légales + "contactez-nous" */
+/* effet POINTILLES pour "prochainement" */
+@keyframes points-anim {
+    from {
+        position: relative;
+        bottom: 0;
+    }
+    to {
+        position: relative;
+        bottom: 3px;
+    }
+}
+.anim1 { 
+    animation-name: points-anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.anim2 { 
+    animation-name: points-anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0.3s;
+}
+.anim3 { 
+    animation-name: points-anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0.7s;
+}
+
+/* effet WIGGLE des sections "mentions légales" + "contactez-nous" */
 @keyframes wiggle_anim {
     0% {
         transform: rotate(0);
@@ -230,7 +262,7 @@ footer {
 button {
     font-size: 1.2em;
     padding: 0.3em 3em;
-    border: 0.3em var(--bg-ohmy) solid ;
+    border: 0.3em var(--bg-ohmy) solid;
     border-radius: 0.7em;
 }
     
