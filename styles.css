@@ -599,8 +599,6 @@ button {
         width: auto;
     }
     .note-soustitre {
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
         font-size: 1.5em;
         margin-top: 1.5em;
     }
@@ -665,6 +663,331 @@ button {
 
 /* ----------- [ Small screen ] ----------- */
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
+
+    * {
+        width: auto;
+    }
+
+    .note-soustitre {
+        font-size: 1em;
+        margin-top: 1em;
+    }
+
+    header h1 {
+        font-size: 2em;                                              
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+
+    .index_main {       /* Page 1 index */ 
+        align-items: center;                          
+        flex-direction: column;                          
+        margin: 0.3em;                                 
+    }
+    .index_main section {
+        width: 13em;                           
+        height: 19em;                                                             
+        margin: 0.5em;                          
+    }
+    .index_main h2 {
+        font-size: 1.3em;
+    }
+    .carte-chic h2 {
+        font-size: 0.75em;
+    }
+    .index_main p {
+        font-size: 1.5em;
+        padding: 0.2em;
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+        margin-bottom: 5em;
+    }
+    button {
+        font-size: 0.8em;
+        padding: 0.3em 1.5em;
+        border: 0.3em var(--bg-ohmy) solid;
+        border-radius: 0.7em;
+    }
+
+    .page2_main {  /* Page 2 Note... */   
+        padding: 0.5em;
+        margin: 0.5em;
+    }
+    .page2_main h2 {        
+        font-size: 0.7em;
+    }
+    .page2_main img {
+        height: 3.3em;  
+    }
+    .page2_main h3 {
+        font-size: 1.8em;
+    }
+    .page2_main h4 {
+        font-size: 0.9em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    .page2_main article {
+        padding-bottom: 2em;
+    }
+    .page2_main .plat {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        font-size: 0.5em;
+    }
+    .page2_main p {
+        padding: 0.3em;
+    }
+    .page2_main span {
+        font-size: 0.3em;
+    }
+    .p2-partie-menu img {
+    /*barres de séparations*/ 
+        height: 0.5em;  
+    }
+    
+
+    /* ------------- Page 3 : Le chic à la française */
+
+    .page3_main { 
+        width: auto;
+        height: auto;
+        padding: 3em 1em;
+        margin: 2em;
+        box-shadow: 0.3em 0.3em 1em rgb(179, 178, 178);
+        font-family: 'Noto Serif', serif;
+    } 
+
+    .carte-detail-chic {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 6em;
+    }
+
+    .page3_main h3 {
+        font-family: 'Croissant One', cursive;
+        text-align: center;
+        padding: 1.5em;
+        font-size: 1.5em;
+        font-size: 1.8em;
+    }
+
+    .page3_main article {
+        margin-bottom: 4em;
+    }
+
+    .page3_main h4 {
+        text-align: center;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        font-size: 0.9em;
+    }
+
+    .page3_main p {
+        font-size: 0.8em;
+    }
+
+    .page3_main span {
+        font-size: 1em;
+    }
+
+    .page3_main .plat {
+        margin-top: 0.8em;
+        margin-bottom: 0.8em;
+        padding-left: 5em;
+        padding-right: 5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .chic-entrée {
+        color: #cb802f;
+    }
+
+    .chic-plat {
+        color: #a56799;
+    }
+
+    .chic-dessert {
+        color: #6e4ccc;
+    }
+
+    /* barres de séparation */
+
+    .p3-partie-menu {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .p3-partie-menu img { 
+        width: 12em;
+    }
+
+    /* ------------- Page 4 : Le délice des papilles */
+
+    .carte-detail-delice {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 6em;
+    }
+
+    .page4_main { 
+        background-color: var( --bg-delice); 
+        font-family: 'Kalam', cursive;
+        width: auto;
+        height: auto;
+        padding: 1em 1.5em 4em 1.5em;
+        margin: 2em;
+        box-shadow: 0.3em 0.3em 1em rgb(179, 178, 178);
+    }
+
+    .page4_main h3 {
+        font-size: 3.7em;
+        text-align: center;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .page4_main article {
+        padding-bottom: 0.8em;
+    }
+
+    .page4_main h4 {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        font-weight: normal;
+    }
+
+    .page4_main .plat {
+        margin-top: 0.8em;
+        margin-bottom: 0.8em;
+        padding-left: 4em;
+        padding-right: 4em;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9em;
+    }
+
+    .page4_main span {
+        font-size: 1.3em;
+    }
+
+    .p4-partie-menu {
+        /* barres de séparation */
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .p4-partie-menu img { 
+        /* barres de séparation */
+        width: 13em;
+    }
+
+    /* ------------- Page 5 : La palette du goût  */
+
+    .page5_main { 
+        width: auto;
+        height: auto;
+        padding: 2em;
+        margin: 2em;
+        box-shadow: 0.3em 0.3em 1em rgb(179, 178, 178);
+        font-family: 'Kalam', cursive;
+    } 
+
+    .carte-detail-palette {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 6em;
+    }
+
+    .page5_main { 
+        width: auto;
+        height: auto;
+        padding: 1em 1em 4em 1em;
+        margin: 2em;
+        box-shadow: 0.3em 0.3em 1em rgb(179, 178, 178);
+    }
+
+    .page5_main h3 {
+        font-size: 3.5em;
+        font-weight: normal;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+        font-family: 'Kaushan Script', cursive;
+    }
+
+    .page5_main article {
+        padding-bottom: 0.8em;
+    }
+
+    .page5_main h4 {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        font-weight: normal;
+        font-size: 1em;
+    }
+
+    .page5_main .plat {
+        font-size: 0.9em;
+        margin-top: 0.8em;
+        margin-bottom: 0.8em;
+        padding-left: 3em;
+        padding-right: 3em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .page5_main span {
+        font-weight: bold;
+    }
+
+    .p5-partie-menu {
+        /* barres de séparation */
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .p5-partie-menu img { 
+        /* barres de séparation */
+        width: 13em;
+    }
+
+    /* ------------- Page 6 : Mentions légales */
+
+    .page6_main { 
+        width: auto;
+        height: auto;
+        margin: 3em 10em 6em 10em;
+        
+    } 
+
+    .page6_main p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.8em;
+        text-align: justify;
+        padding-bottom: 1em;
+    }
 
 }
