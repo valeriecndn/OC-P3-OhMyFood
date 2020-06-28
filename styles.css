@@ -312,6 +312,7 @@ button {
     font-weight: bold;
     font-size: 1.1em;
     padding-right: 0.5em;
+    align-self: center;
 }
 
 .page2_main .plat {
@@ -590,3 +591,80 @@ button {
 ---------------------------------------------- [ RESPONSIVE ] ------------------------------------------
  ----------------------------------------------------------------------------------------------------- */
 
+/* ----------- [ Medium screen ] ----------- */
+
+@media screen and (max-width:900px) { 
+    
+    * {
+        width: auto;
+    }
+    .note-soustitre {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 1.5em;
+    }
+
+    .index_main section { /* Page index */
+        width: 18em;
+        height: 26em;
+        margin: 1.5em;
+    }
+    .index_main h2 {
+        font-size: 2em;
+    }
+    .carte-chic h2 {
+        font-size: 1.1em;
+    }
+    .index_main p {
+        font-size: 1.3em;
+    }
+    .index_main img {
+        width: 2.3em;
+    }
+
+
+    .page2_main h2 { /* Page 2 Note... */          
+        font-size: 1em;
+    }
+    .page2_main img {
+        height: 3.6em;  
+    }
+    .page2_main h3 {
+        font-size: 2.1em;
+    }
+    .page2_main h4 {
+        font-size: 1.1em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    .page2_main article {
+        padding-bottom: 2.5em;
+    }
+    .page2_main p {
+        padding: 0.3em;
+    }
+    .page2_main span {
+        font-size: 0.9em;
+    }
+    .p2-partie-menu img {
+    /*barres de séparations*/ 
+        height: 1.3em;  
+    }
+
+
+    .page4_main h3 { /* Page 4 Délice... */
+        font-size: 2.8em;
+    }
+
+    .page5_main h3 { /* Page 5 Palette...*/
+        font-size: 2.9em;
+    }    
+
+}
+
+/* ----------- [ Small screen ] ----------- */
+
+@media screen and (max-width:500px) {
+
+}
