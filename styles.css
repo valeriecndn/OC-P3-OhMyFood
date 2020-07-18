@@ -86,22 +86,22 @@ header, footer, button {
 /* ----------------------------------------- [ ANIMATIONS ] ------------------------------------------- */
 
 /* effet ZOOM OPAQUE des cartes accueil */
+
 @keyframes zoom-anim {
     from { 
         transform: scale(1); 
     }
     to { 
-        transform: scale(1.20); 
-        opacity: 50%;
+        transform: scale(1.30); 
+        opacity: 30%;
         overflow: hidden;
-
     }
-
 }
-.zoom-anim:hover {
+a:hover .zoom-anim {
     animation: zoom-anim 1s;
     animation-fill-mode: forwards;
 }
+
 
 /* effet POINTILLES pour "prochainement" */
 @keyframes points-anim {
@@ -156,13 +156,38 @@ header, footer, button {
     content: "";
     display: block;
     border-bottom: 3px solid;
-    padding-bottom: 0.3em;
-    width: 0%;
-    transition: all 1s ease; 
-
+    transition: all 1s ease;    
+    width: 0;
+    opacity: 0;
 }
-.underline-anim:hover::after {
+
+.underline-anim.underline-note:hover::after {
     width: 100%;
+    opacity: 100;
+}
+.underline-anim.underline-chic:hover::after {
+    width: 100%;
+    opacity: 100;
+}
+.underline-anim.underline-delice1:hover::after {
+    color: #0025d7;
+    width: 100%;
+    opacity: 100;
+}
+.underline-anim.underline-delice2:hover::after {
+    color: #056dea;
+    width: 100%;
+    opacity: 100;
+}
+.underline-anim.underline-delice3:hover::after {
+    color: #229ff3;
+    width: 100%;
+    opacity: 100;
+}
+.underline-anim.underline-palette:hover::after {
+    color: #a1db70;
+    width: 100%;
+    opacity: 100;
 }
 
 /* -----------------------------------------------------------------------------------------------------
@@ -235,6 +260,10 @@ footer {
     box-shadow: 0.3em 0.3em 1em rgb(179, 178, 178);
 }
 
+.index_main .zoom-anim {
+    text-align: center;
+}
+
 .index_main h2 {
     font-size: 2.3em;
 }
@@ -250,7 +279,6 @@ footer {
 
 .index_main img {
     width: 2.7em;
-    text-align: center;
 }
 
 .btn {
@@ -294,7 +322,7 @@ button {
 
 .page2_main h4 {
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.4em;
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
@@ -310,7 +338,7 @@ button {
 
 .page2_main span {
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em;
     padding-right: 0.5em;
     align-self: center;
 }
@@ -382,8 +410,7 @@ button {
 
 .page3_main h4 {
     text-align: center;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding: 0.5em;
     font-size: 0.9em;
 }
 
@@ -660,6 +687,8 @@ button {
     }    
 
 }
+
+
 
 /* ----------- [ Small screen ] ----------- */
 
